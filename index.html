@@ -1,374 +1,326 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Acceuil</title>
-  </head>
 
-  <body>
-    <!-- NAVBAR  -->
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top bg-white">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <a href="index.html" class="brand">
-              <img src="images/logo.jpeg" alt="logo" class="img-fluid" />
-            </a>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Nos Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="centre.html"
-                  >Nos Centres de formation</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="recrute.html">L'AFPAR recrute</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="http://www.marches-securises.fr/perso/AFPAR_974/s"
-                  >Marchés publics</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quisommesnous.html"
-                  >Qui sommes nous ?</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                id="search"
-                placeholder="Rechercher"
-              />
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <!-- DARK MODE  -->
-            <!-- <form class="dMode">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Acceuil</title>
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top bg-white">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a href="index.html" class="brand">
+            <img src="images/logo.jpeg" alt="logo" class="img-fluid" />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Nos Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="centre.html">Nos Centres de formation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recrute.html">L'AFPAR recrute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.marches-securises.fr/perso/AFPAR_974/s">Marchés publics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quisommesnous.html">Qui sommes nous ?</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="search" placeholder="Rechercher" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <!-- DARK MODE  -->
+          <!-- <form class="dMode">
               <input type="checkbox" id="dark-mode" class="toggle" name="Dark mode" role="switch" value="on">
               <label for="dark-mode" class="sr">Dark Mode</label>
               <div class="curtain"></div>
             </form> -->
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Carousel -->
-
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="images/article_charpentier.jpg"
-            class="d-block w-100"
-            alt="charpente"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/metier-responsable-espaces-verts.jpg"
-            class="d-block w-100"
-            alt="paysagiste"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/secteur-industrie.jpeg"
-            class="d-block w-100"
-            alt="tertiaire"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/tertiaires-fiches-metiers.jpg"
-            class="d-block w-100"
-            alt=""
-          />
         </div>
       </div>
+    </nav>
+  </header>
+
+  <!-- Carousel DIFFERENT METIER -->
+
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/article_charpentier.jpg" class="d-block w-100" alt="charpente" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/paysagiste-1200x500.jpg" class="d-block w-100" alt="paysagiste" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/secteur-industrie.jpeg" class="d-block w-100" alt="tertiaire" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/tertiaires-fiches-metiers.jpg" class="d-block w-100" alt="" />
+      </div>
     </div>
+  </div>
 
-    <!-- Body page  -->
+  <!-- Body page  -->
 
-    <div class="container">
+  <div class="container">
 
-      <!-- card pour présenter les blocs : formations, entreprises et partenaires -->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card">
-          <div class="card__inner">
-            <div class="card__face--front" onclick="showBack('card__body')">
-              <h2>Nos formations</h2>
-              <div class="card__header">
-                <a href="formation.html"><img src="images/formation.jpg" alt="" class="pics"></a>
-              </div>
+    <!-- card pour présenter les blocs : formations, entreprises et partenaires -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <h2>Nos formations</h2>
+            <div class="card__header">
+              <a href="formation.html"><img src="images/formation.jpg" alt="" class="pics"></a>
             </div>
-            <div class="card__face--back">
-              <div class="card__content">
-                <div class="card__body" id="card__body">
-                  <h3>Nouvelles formations 2023</h3>
-                  <p>
-                    <ul>
-                      <li><font color="#ff00ff">TUYAUTEUR(SE) INDUSTRIEL (SAINT PAUL)</font></li>
-                  </ul>
-                  <ul>
-                      <li><span style="color: rgb(153, 204, 255);">TECHNICIEN(NE) DU BATIMENT COMMUNICANT ET CONNECTE (SAINT PIERRE)</span></li>
-                  </ul>
-                  <ul>
-                      <li><font color="#3366ff">METALLIER(ERE) (SAINT PAUL)</font></li>
-                  </ul>
-                  <ul>
-                      <li><font color="#3366ff">TECHNICIEN(NE) GEOMETRE EN CABINET (SAINT PAUL)</font></li>
-                  </ul>
-                  <ul>
-                      <li><span style="color: rgb(51, 153, 102);">INSTALLATEUR(TRICE) MAINTENEUR(SE) DE PANNEAUX SOLAIRES THERMIQUES ET PHOTOVOLTAIQUES (SAINT PAUL)</span></li>
-                  </ul>
-                  <ul>
-                      <li><font color="#ff00ff">TECHNICIEN(NE) D'ASSISTANCE EN INFORMATIQUE (SAINT ANDRE)</font></li>
-                  </ul>
-                  <ul>
-                      <li>MECANICIEN(NE) REPARATEUR(TRICE) EN MARINE DE PLAISANCE (SAINT PAUL)</li>
-                  </ul>
-                  <ul>
-                      <li><span style="color: rgb(255, 0, 0);">INFOGRAPHISTE METTEUR(SE) EN PAGE (SAINT ANDRE)</span></li>
-                  </ul>
-                  <ul>
-                      <li><span style="color: rgb(255, 204, 0);">ECHAFFAUDEUR(SE) (SAINT ANDRE)</span></li>
-                  </ul>
-                  <ul>
-                      <li><span style="color: rgb(51, 153, 102);">AGENT(E) DE VALORISATION DES ESPACES PAYSAGERS (SAINT ANDRE)</span></li>
-                  </ul>
-                  </p>
-                </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__body" id="card__body">
+                <h3>Nouvelles formations 2023</h3>
+                <p>
+                <ul>
+                  <li>TUYAUTEUR(SE) INDUSTRIEL (SAINT PAUL)</li>
+                </ul>
+                <ul>
+                  <li>TECHNICIEN(NE) DU BATIMENT COMMUNICANT ET CONNECTE (SAINT PIERRE)</li>
+                </ul>
+                <ul>
+                  <li>METALLIER(ERE) (SAINT PAUL)</li>
+                </ul>
+                <ul>
+                  <li>TECHNICIEN(NE) GEOMETRE EN CABINET (SAINT PAUL)</li>
+                </ul>
+                <ul>
+                  <li>INSTALLATEUR(TRICE) MAINTENEUR(SE) DE PANNEAUX SOLAIRES THERMIQUES ET PHOTOVOLTAIQUES (SAINT PAUL)
+                  </li>
+                </ul>
+                <ul>
+                  <li>TECHNICIEN(NE) D'ASSISTANCE EN INFORMATIQUE (SAINT ANDRE)</li>
+                </ul>
+                <ul>
+                  <li>MECANICIEN(NE) REPARATEUR(TRICE) EN MARINE DE PLAISANCE (SAINT PAUL)</li>
+                </ul>
+                <ul>
+                  <li>INFOGRAPHISTE METTEUR(SE) EN PAGE (SAINT ANDRE)</li>
+                </ul>
+                <ul>
+                  <li>ECHAFFAUDEUR(SE) (SAINT ANDRE)</li>
+                </ul>
+                <ul>
+                  <li>AGENT(E) DE VALORISATION DES ESPACES PAYSAGERS (SAINT ANDRE)</li>
+                </ul>
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card__inner">
-            <div class="card__face card__face--front">
-              <h2>Entreprises</h2>
-              <div class="card__header">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <h2>Entreprises</h2>
+            <div class="card__header">
               <img src="images/entreprise.jpg" alt="" class="pics">
-              </div>
-            </div>
-            <div class="card__face card__face--back">
-              <div class="card__content">
-                <div class="card__body">
-                  <h3>Formations dans le secteur du Tertiaire</h3>
-                  <p>
-                    <p><span style="font-size: larger;"><strong>Employ&eacute;(e) Administratif(ve) et d'Accueil</strong>&nbsp;</span></p>
-                    <p>Saint Paul :&nbsp; &nbsp;20/03/2023 au 01/09/2023</p>
-                    <p>Saint Andr&eacute; : 30/03/2023 au 15/09/2023</p>
-                    <p>Saint Denis : 09/05/2023 au 20/10/2023</p>
-                    <p>Saint Andr&eacute; : 11/10/2023 au 29/03/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Secr&eacute;taire Assistant(e)</span></strong></p>
-                    <p>Saint Pierre : 30/03/2023 au 15/09/2023</p>
-                    <p>Saint Pierre : 14/04/2023 au 29/09/2023</p>
-                    <p>Saint Paul :&nbsp; &nbsp;28/06/2023 au 08/12/2023</p>
-                    <p>Saint Andr&eacute; : 27/09/2023 au 15/03/2024&nbsp;</p>
-                    <p>Saint Andr&eacute; : 16/10/2023 au 04/04/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Secr&eacute;taire Assistant(e) M&eacute;dico-Social</span></strong></p>
-                    <p>Saint Denis : 16/08/2023 au 01/03/2024</p>
-                    <p>Saint Paul&nbsp; :&nbsp; 17/08/2023 au 01/03/2024</p>
-                    <p>Saint Pierre : 23/08/2023 au 08/03/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Secr&eacute;taire Comptable</span></strong></p>
-                    <p>Saint Pierre : 05/06/2023 au 08/03/2024</p>
-                    <p>Saint Paul : 12/09/2023 au 21/06/2024</p>
-                    <p>Saint Denis : 31/10/2023 au 09/08/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Comptable Assistant(e)</span></strong></p>
-                    <p>Saint Pierre : 05/04/2023 au 10/11/2023</p>
-                    <p>Saint Andr&eacute; : 25/07/2023 au 01/03/2024</p>
-                    <p>Saint Denis : 16/08/2023 au 22/03/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Assistant(e) de Direction</span></strong></p>
-                    <p>Saint Denis : 18/10/2023 au 17/05/2024</p>
-                    <p>&nbsp;</p>
-                    <p><strong><span style="font-size: larger;">Gestionnaire de Paie</span></strong></p>
-                    <p>Saint Pierre : 17/04/2023 au 20/10/2023</p>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card__inner">
-            <div class="card__face card__face--front">
-              <h2>Prescipteurs ou Partenaires</h2>
-              <div class="card__header">
-              <img src="images/partenaire.jpg" alt="" class="pics">
-              </div>
-            </div>
-            <div class="card__face card__face--back">
-              <div class="card__content">
-                <div class="card__body">
-                  <h3>Nos formations dans le secteur Formation / Insertion / M&eacute;diation&nbsp;</h3>
-                  <p>
-                    <strong><span style="font-size: larger;">Formateur(trice) Professionnel(le) d'Adultes</span></strong>
-                    <p>Saint Denis : 16/08/23 au 15/03/24</p>
-                    <p>Saint Paul :&nbsp; 11/10/23 au 17/05/24</p>
-                    <p>Saint Pierre : 19/09/23 au 19/04/24</p>
-                    <p><span style="font-size: larger;">- </span><strong><span style="font-size: larger;">Conseiller(&egrave;re) en Insertion Professionnelle</span></strong></p>
-                    <p>Saint Pierre :&nbsp; 10/07/23 au 01/03/24</p>
-                    <p><span style="font-size: larger;">- </span><strong><span style="font-size: larger;">Agent(e) de M&eacute;diation Information et Services</span></strong></p>
-                    <p>Saint Pierre : 30/10/23 au 25/04/24</p>
-                    <p><span style="font-size: larger;">- </span><strong><span style="font-size: larger;">M&eacute;diateur(trice) Social Acc&egrave;s aux Droits et Services</span></strong></p>
-                    <p>Saint Pierre : 20/04/23 au 12/10/23</p>
-                  </p>
-                </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__body">
+                <h3>Formations dans le secteur du Tertiaire</h3>
+                <p>
+                <p><span style="font-size: larger;"><strong>Employ&eacute;(e) Administratif(ve) et
+                      d'Accueil</strong>&nbsp;</span></p>
+                <p>Saint Paul :&nbsp; &nbsp;20/03/2023 au 01/09/2023</p>
+                <p>Saint Andr&eacute; : 30/03/2023 au 15/09/2023</p>
+                <p>Saint Denis : 09/05/2023 au 20/10/2023</p>
+                <p>Saint Andr&eacute; : 11/10/2023 au 29/03/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Secr&eacute;taire Assistant(e)</span></strong></p>
+                <p>Saint Pierre : 30/03/2023 au 15/09/2023</p>
+                <p>Saint Pierre : 14/04/2023 au 29/09/2023</p>
+                <p>Saint Paul :&nbsp; &nbsp;28/06/2023 au 08/12/2023</p>
+                <p>Saint Andr&eacute; : 27/09/2023 au 15/03/2024&nbsp;</p>
+                <p>Saint Andr&eacute; : 16/10/2023 au 04/04/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Secr&eacute;taire Assistant(e)
+                      M&eacute;dico-Social</span></strong></p>
+                <p>Saint Denis : 16/08/2023 au 01/03/2024</p>
+                <p>Saint Paul&nbsp; :&nbsp; 17/08/2023 au 01/03/2024</p>
+                <p>Saint Pierre : 23/08/2023 au 08/03/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Secr&eacute;taire Comptable</span></strong></p>
+                <p>Saint Pierre : 05/06/2023 au 08/03/2024</p>
+                <p>Saint Paul : 12/09/2023 au 21/06/2024</p>
+                <p>Saint Denis : 31/10/2023 au 09/08/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Comptable Assistant(e)</span></strong></p>
+                <p>Saint Pierre : 05/04/2023 au 10/11/2023</p>
+                <p>Saint Andr&eacute; : 25/07/2023 au 01/03/2024</p>
+                <p>Saint Denis : 16/08/2023 au 22/03/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Assistant(e) de Direction</span></strong></p>
+                <p>Saint Denis : 18/10/2023 au 17/05/2024</p>
+                <p>&nbsp;</p>
+                <p><strong><span style="font-size: larger;">Gestionnaire de Paie</span></strong></p>
+                <p>Saint Pierre : 17/04/2023 au 20/10/2023</p>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- ACTUALITE -->
 
-      <div id="drag">
-        <div id="spin">
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5744660362316151/"
-            >
-              <img src="images/jeudi09.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5733225016793019/"
-            >
-              <img src="images/mercredi08.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/photo?fbid=558940646268877&set=a.556898699806405"
-            >
-              <img src="images/mardi07.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5632355196880002/"
-            >
-              <img src="images/recrutement.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5630696317045890/"
-            >
-              <img src="images/recrutement2.jpg" alt=""
-            /></a>
-          </figure>
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <h2>Prescipteurs ou Partenaires</h2>
+            <div class="card__header">
+              <img src="images/partenaire.jpg" alt="" class="pics">
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__body">
+                <h3>Nos formations dans le secteur Formation / Insertion / M&eacute;diation&nbsp;</h3>
+                <p>
+                  <strong><span style="font-size: larger;">Formateur(trice) Professionnel(le) d'Adultes</span></strong>
+                <p>Saint Denis : 16/08/23 au 15/03/24</p>
+                <p>Saint Paul :&nbsp; 11/10/23 au 17/05/24</p>
+                <p>Saint Pierre : 19/09/23 au 19/04/24</p>
+                <p><span style="font-size: larger;">- </span><strong><span
+                      style="font-size: larger;">Conseiller(&egrave;re) en Insertion Professionnelle</span></strong></p>
+                <p>Saint Pierre :&nbsp; 10/07/23 au 01/03/24</p>
+                <p><span style="font-size: larger;">- </span><strong><span style="font-size: larger;">Agent(e) de
+                      M&eacute;diation Information et Services</span></strong></p>
+                <p>Saint Pierre : 30/10/23 au 25/04/24</p>
+                <p><span style="font-size: larger;">- </span><strong><span
+                      style="font-size: larger;">M&eacute;diateur(trice) Social Acc&egrave;s aux Droits et
+                      Services</span></strong></p>
+                <p>Saint Pierre : 20/04/23 au 12/10/23</p>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- ACTUALITE -->
 
-    <!-- FOOTER  -->
-    <footer>
-      <div class="row bg-white">
-        <div class="col-xs-12 col-sm-8">
-          <img src="images/partenaire1.png" class="img-responsive" />
+    <div id="carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-slide-to="2"></li>
+        <li data-bs-target="#myCarousel" data-slide-to="3"></li>
+        <li data-bs-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item-active">
+          <div class="fill">
+            <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5744660362316151/" target="_blank">
+              <img src="images/jeudi09.jpg" alt="" class="d-block w-50 h-50"/>
+            </a>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <img src="images/partenaire2.png" class="img-responsive" />
+        <div class="item">
+          <div class="fill">
+            <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5733225016793019/" target="_blank">
+              <img src="images/mercredi08.jpg" alt="" class="d-block w-50 h-50"/>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill">
+            <a href="https://www.facebook.com/photo?fbid=558940646268877&set=a.556898699806405" target="_blank">
+              <img src="images/mardi07.jpg" alt="" class="d-block w-50 h-50"/>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill">
+            <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5632355196880002/" target="_blank">
+              <img src="images/recrutement.jpg" alt="" class="d-block w-50 h-50"/>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill">
+            <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5630696317045890/" target="_blank">
+              <img src="images/recrutement2.jpg" alt="" class="d-block w-50 h-50"/>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="row pave-tel">
-            <div class="col-xs-12 col-md-12 border-bottom">
-              <div class="d-flex-center numero-azur" style="margin-top: 15px">
-                <img
-                  src="images/numero-telephone-azur-afpar.png"
-                  alt="Numero AZUR"
-                  class="pull-right img-responsive"
-                />
-                <a
-                  style="margin-left: 10px; clear: both"
-                  href="http://www.afpar.com/index.php?page=Front.Pages.View&id=34&title=Mentions-legales"
-                  >Mentions légales</a
-                >
-              </div>
+      <a href="#myCarousel" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a>
+      <a href="#myCarousel" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>
+    </div>
+  </div>
+
+  <!-- FOOTER  -->
+  <footer>
+    <div class="row bg-white">
+      <div class="col-xs-12 col-sm-8">
+        <img src="images/partenaire1.png" class="img-responsive" />
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <img src="images/partenaire2.png" class="img-responsive" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="row pave-tel">
+          <div class="col-xs-12 col-md-12 border-bottom">
+            <div class="d-flex-center numero-azur" style="margin-top: 15px">
+              <img src="images/numero-telephone-azur-afpar.png" alt="Numero AZUR" class="pull-right img-responsive" />
+              <a style="margin-left: 10px; clear: both"
+                href="http://www.afpar.com/index.php?page=Front.Pages.View&id=34&title=Mentions-legales">Mentions
+                légales</a>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-8">
-          <p class="text-right">
-            Nous rejoindre sur Facebook et Instagram :
-            <a
-              href="https://www.instagram.com/afpar_reunion/?hl=fr"
-              target="_blank"
-              class="pull-right"
-            >
-              <img
-                src="images/instagram.png"
-                alt="instagram"
-                class="pull-right"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/afpar.reunion"
-              target="_blank"
-              class="pull-right"
-            >
-              <img src="images/facebook.png" alt="facebook" />
-            </a>
-          </p>
-        </div>
       </div>
-    </footer>
+      <div class="col-xs-12 col-md-8">
+        <p class="text-right">
+          Nous rejoindre sur Facebook et Instagram :
+          <a href="https://www.instagram.com/afpar_reunion/?hl=fr" target="_blank" class="pull-right">
+            <img src="images/instagram.png" alt="instagram" class="pull-right" />
+          </a>
+          <a href="https://www.facebook.com/afpar.reunion" target="_blank" class="pull-right">
+            <img src="images/facebook.png" alt="facebook" />
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/0aaab9605f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/0aaab9605f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
