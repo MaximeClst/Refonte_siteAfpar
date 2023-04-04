@@ -1,240 +1,507 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Acceuil</title>
-  </head>
 
-  <body>
-    <!-- NAVBAR  -->
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top bg-white">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <a href="index.html" class="brand">
-              <img src="images/logo.jpeg" alt="logo" class="img-fluid" />
-            </a>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Nos Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="centre.html"
-                  >Nos Centres de formation</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="recrute.html">L'AFPAR recrute</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="http://www.marches-securises.fr/perso/AFPAR_974/s"
-                  >Marchés publics</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quisommesnous.html"
-                  >Qui sommes nous ?</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                id="search"
-                placeholder="Rechercher"
-              />
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <!-- DARK MODE  -->
-            <!-- <form class="dMode">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Formation</title>
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top bg-white">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a href="index.html" class="brand">
+            <img src="images/logo.jpeg" alt="logo" class="img-fluid" />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Nos Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="centre.html">Nos Centres de formation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recrute.html">L'AFPAR recrute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.marches-securises.fr/perso/AFPAR_974/s">Marchés publics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quisommesnous.html">Qui sommes nous ?</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="search" placeholder="Rechercher" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <!-- DARK MODE  -->
+          <!-- <form class="dMode">
               <input type="checkbox" id="dark-mode" class="toggle" name="Dark mode" role="switch" value="on">
               <label for="dark-mode" class="sr">Dark Mode</label>
               <div class="curtain"></div>
             </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/article_charpentier.jpg" class="d-block w-100" alt="charpente" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/metier-responsable-espaces-verts.jpg" class="d-block w-100" alt="paysagiste" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/secteur-industrie.jpeg" class="d-block w-100" alt="tertiaire" />
+      </div>
+      <div class="carousel-item">
+        <img src="images/tertiaires-fiches-metiers.jpg" class="d-block w-100" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Body page  -->
+
+  <div class="container">
+    <!-- card pour présenter les blocs : formations -->
+    <table width="100%" border="1" class="container mt-5">
+      <tr>
+        <td class="text-center"><i class="fa-solid fa-chevron-right"></i>Nos secteurs de formations</td>
+      </tr>
+    </table>
+
+    <ul data-carousel>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Hotellerie" class="card">
+          <img src="images/img_Formations/HRT.jpg" alt="">
+          <div><div><span>Hôtellerie - Restauration - Tourisme</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Horticulture" class="card">
+          <img src="images/img_Formations/H-E.jpg" alt="">
+          <div><div><span>Horticulture - Environnement</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Informatique" class="card">
+          <img src="images/img_Formations/Informatique.jpg" alt="">
+          <div><div><span>Information</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Bois et Charpente" class="card">
+          <img src="images/img_Formations/menuisier.jpg" alt="">
+          <div><div><span>Bois et Charpente</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Secretaire" class="card">
+          <img src="images/img_Formations/secretaire.jpg" alt="">
+          <div><div><span>Secrétariat - Comptabilité - Gestion</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Electricite" class="card">
+          <img src="images/img_Formations/Electricien.jpeg" alt="">
+          <div><div><span>Electricité et maintenance</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Batiment" class="card">
+          <img src="images/img_Formations/GrosOeuvre.jpg" alt="">
+          <div><div><span>Bâtiment gros oeuvre / second oeuvre</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Encadremenr Chantier" class="card">
+          <img src="images/img_Formations/encadrementChantier.jpeg" alt="">
+          <div><div><span>Bâtiment encadrement chantier</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="INDUSTRIEL" class="card">
+          <img src="images/img_Formations/industrie-competence.jpg" alt="">
+          <div><div><span>Industrie</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Mécanicien" class="card">
+          <img src="images/img_Formations/mecanicien.jpg" alt="">
+          <div><div><span>Mécanique automobile/motocycle</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Services" class="card">
+          <img src="images/img_Formations/service.jpg" alt="">
+          <div><div><span>Service à la personne</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Médiation" class="card">
+          <img src="images/img_Formations/Médiation.jpg" alt="">
+          <div><div><span>Médiation - Insertion et Formation</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Commerce" class="card">
+          <img src="images/img_Formations/commerce.png" alt="">
+          <div><div><span>Commerce</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Transition écologique" class="card">
+          <img src="images/img_Formations/devdurable.jpg" alt="">
+          <div><div><span>Transition écologique</span></div></div>
+        </a>
+      </li>
+      <li class="row-col-md-3 g-4">
+        <a href="" title="Economie bleue" class="card">
+          <img src="images/img_Formations/mecamarine.jpg" alt="">
+          <div><div><span>Economie Bleue</span></div></div>
+        </a>
+      </li>
+    </ul>
+    <!-- <div class="row row-cols-2 row-cols-md-3 py-2">
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/H-E.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
 
-    <!-- Carousel -->
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/HRT.jpg" alt="Hotellerie" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Hôtellerie - Restauration - Tourisme</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
 
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Informatique.jpg" alt="Informatique" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Informatique</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/menuisier.jpg" alt="Menuisier" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Bois et Charpente</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/img_Formations/Horticulture.jpg" alt="Horticulture" class="rounded-bottom-circle">
+          <div class="card-body">
+            <h3 class="text-center">Horticulture - Environnement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit vitae explicabo ipsa eum assumenda
+              earum est corporis reprehenderit facilis dolores accusamus odit magni illo libero doloremque, sapiente
+              iusto quae.</p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <a href="" class="btn btn-primary" role="button">Voir +</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- ACTUALITE -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div> -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            src="images/article_charpentier.jpg"
-            class="d-block w-100"
-            alt="charpente"
-          />
+          <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5744660362316151/" target="_blank">
+            <img src="images/jeudi09.jpg" alt="" class="d-flex w-25 h-100">
+          </a>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/metier-responsable-espaces-verts.jpg"
-            class="d-block w-100"
-            alt="paysagiste"
-          />
+          <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5733225016793019/" target="_blank">
+            <img src="images/mercredi08.jpg" alt="" class="d-flex w-25 h-50">
+          </a>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/secteur-industrie.jpeg"
-            class="d-block w-100"
-            alt="tertiaire"
-          />
+          <a href="https://www.facebook.com/photo?fbid=558940646268877&set=a.556898699806405" target="_blank">
+            <img src="images/mardi07.jpg" alt="" class="d-flex w-25 h-50">
+          </a>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/tertiaires-fiches-metiers.jpg"
-            class="d-block w-100"
-            alt=""
-          />
+          <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5632355196880002/" target="_blank">
+            <img src="images/recrutement.jpg" alt="" class="d-flex w-25 h-50">
+          </a>
         </div>
+        <div class="carousel-item">
+          <a href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5630696317045890/" target="_blank">
+            <img src="images/recrutement2.jpg" alt="" class="d-flex w-25 h-50">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER  -->
+  <footer>
+    <div class="row bg-white">
+      <div class="col-xs-12 col-sm-8">
+        <img src="images/partenaire1.png" class="img-responsive" />
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <img src="images/partenaire2.png" class="img-responsive" />
       </div>
     </div>
-
-    <!-- Body page  -->
-
-    <div class="container">
-      <!-- card pour présenter les blocs : formations, entreprises et partenaires -->
-
-      <!-- ACTUALITE -->
-
-      <div id="drag">
-        <div id="spin">
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5744660362316151/"
-            >
-              <img src="images/jeudi09.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5733225016793019/"
-            >
-              <img src="images/mercredi08.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/photo?fbid=558940646268877&set=a.556898699806405"
-            >
-              <img src="images/mardi07.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5632355196880002/"
-            >
-              <img src="images/recrutement.jpg" alt=""
-            /></a>
-          </figure>
-          <figure>
-            <a
-              href="https://www.facebook.com/afpar.reunion/photos/a.600899920025580/5630696317045890/"
-            >
-              <img src="images/recrutement2.jpg" alt=""
-            /></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <!-- FOOTER  -->
-    <footer>
-      <div class="row bg-white">
-        <div class="col-xs-12 col-sm-8">
-          <img src="images/partenaire1.png" class="img-responsive" />
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <img src="images/partenaire2.png" class="img-responsive" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="row pave-tel">
-            <div class="col-xs-12 col-md-12 border-bottom">
-              <div class="d-flex-center numero-azur" style="margin-top: 15px">
-                <img
-                  src="images/numero-telephone-azur-afpar.png"
-                  alt="Numero AZUR"
-                  class="pull-right img-responsive"
-                />
-                <a
-                  style="margin-left: 10px; clear: both"
-                  href="http://www.afpar.com/index.php?page=Front.Pages.View&id=34&title=Mentions-legales"
-                  >Mentions légales</a
-                >
-              </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="row pave-tel">
+          <div class="col-xs-12 col-md-12 border-bottom">
+            <div class="d-flex-center numero-azur" style="margin-top: 15px">
+              <img src="images/numero-telephone-azur-afpar.png" alt="Numero AZUR" class="pull-right img-responsive" />
+              <a style="margin-left: 10px; clear: both"
+                href="http://www.afpar.com/index.php?page=Front.Pages.View&id=34&title=Mentions-legales">Mentions
+                légales</a>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-8">
-          <p class="text-right">
-            Nous rejoindre sur Facebook et Instagram :
-            <a
-              href="https://www.instagram.com/afpar_reunion/?hl=fr"
-              target="_blank"
-              class="pull-right"
-            >
-              <img
-                src="images/instagram.png"
-                alt="instagram"
-                class="pull-right"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/afpar.reunion"
-              target="_blank"
-              class="pull-right"
-            >
-              <img src="images/facebook.png" alt="facebook" />
-            </a>
-          </p>
-        </div>
       </div>
-    </footer>
+      <div class="col-xs-12 col-md-8">
+        <p class="text-right">
+          Nous rejoindre sur Facebook et Instagram :
+          <a href="https://www.instagram.com/afpar_reunion/?hl=fr" target="_blank" class="pull-right">
+            <img src="images/instagram.png" alt="instagram" class="pull-right" />
+          </a>
+          <a href="https://www.facebook.com/afpar.reunion" target="_blank" class="pull-right">
+            <img src="images/facebook.png" alt="facebook" />
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/0aaab9605f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/0aaab9605f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

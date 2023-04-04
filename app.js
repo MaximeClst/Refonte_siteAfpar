@@ -1,9 +1,18 @@
-// // FONCTION POUR FLIP LES CARDS
-const card = document.querySelector(".card__inner");
-
-card.addEventListener("click", function (e) {
-  card.classList.toggle('is-flipped');
-});
+//FONCTION POUR FLIP LES CARDS
+(function changeClass(button) {
+  var elements = button.parentNode.getElementsByClassName('card__inner');
+  for (var i = 0; i < elements.lenght; i++) {
+    if (elements[i].className == "card__inner") {
+      elements[i].className += " rotated";
+    }
+    else if (elements[i].className == "card__content") {
+      elements[i].className += " rotated";
+    }
+    else {
+      elements[i].className = "card__content";
+    }
+  }
+})();
 
 
 
@@ -19,7 +28,7 @@ card.addEventListener("click", function (e) {
 // 	return;
 // }
 
-// function fadein(id) 
+// function fadein(id)
 // {
 //     var level = 0;
 //     while(level <= 1)
