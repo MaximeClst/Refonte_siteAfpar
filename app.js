@@ -1,44 +1,23 @@
 //FONCTION POUR FLIP LES CARDS
-(function changeClass(button) {
-  var elements = button.parentNode.getElementsByClassName('card__inner');
-  for (var i = 0; i < elements.lenght; i++) {
-    if (elements[i].className == "card__inner") {
-      elements[i].className += " rotated";
-    }
-    else if (elements[i].className == "card__content") {
-      elements[i].className += " rotated";
-    }
-    else {
-      elements[i].className = "card__content";
-    }
-  }
-})();
 
+// Récupération de toutes les images 
+const pics = document.querySelectorAll('.pic');
 
+// Ajout d'un écouteur d'évènement sur chaque image
+pics.forEach(pic => {
+  pic.addEventListener('click', () => {
+    //Récupération du texte et du lien associé à l'image
+    const cardContent = pic.nextElementSibling;
 
-// FONCTION POUR FAIRE REMPLACER L'IMAGE PAR LE TEXTE LORS DU FLIP
-// function gradient(id, level)
-// {
-// 	var box = document.getElementById(id);
-// 	box.style.opacity = level;
-// 	box.style.MozOpacity = level;
-// 	box.style.KhtmlOpacity = level;
-// 	box.style.filter = "alpha(opacity=" + level * 100 + ")";
-// 	box.style.display="block";
-// 	return;
-// }
+    // Affichage de la div qui contient le texte
+    cardContent.style.display = 'block';
 
-// function fadein(id)
-// {
-//     var level = 0;
-//     while(level <= 1)
-//     {
-//         setTimeout( "gradient('" + id + "'," + level + ")", (level* 1000) + 10);
-//         level += 0.01;
-//     }
-// }
+    // Récupération du lien 
+    const link = cardContent.querySelector('a').getAttribute('href');
 
-// function showBack()
-// {
-//     fadein("card__body");
-// } 
+    // Ajout d'un écouteur d'évènement sur le texte pour rediriger vers le lien
+    cardContent.addEventListener('click', () => {
+      window.location.href = link;
+    });
+  });
+});
