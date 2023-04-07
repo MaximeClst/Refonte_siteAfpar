@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2cbaa7 !important;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  flex-wrap: inherit;
+  margin: auto;
+  padding: 50px;
+  height: 100px;
+}
+
+.brand img {
+  width: 100px;
+}
+
+.d-flex {
+  display: flex;
+  margin-left: 650px;
+}
+
+.fa-solid {
+  padding: 10px;
+}
+
+/* SWITCH DARK MODE 
+.dMode, toggle::before, toggle::after {
+  background: hsl(0,0%,90%);
+}
+
+.dMode, .toggle {
+  position: relative;
+}
+
+.dMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.curtain, .sr,  .toggle::before, .toggle::after {
+  position: absolute;
+}
+
+.curtain, .toggle::before, .toggle::after {
+  transition: transform var(--dur);
+}
+
+.curtain, .toggle::before, .toggle:checked:after {
+  transition-timing-function: ease-out;
+}
+
+.curtain, .sr {
+  top: 0;
+  left: 0;
+}
+
+.curtain {
+  background: hsl(0,0%,100%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+.sr, .toggle {
+  overflow: hidden;
+}
+
+.sr {
+  clip: rect(1px,1px,1px,1px);
+  color: transparent;
+  width: 1px;
+  height: 1px;
+}
+
+.toggle {
+  background: currentColor;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  width: 3rem;
+  height: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.toggle::before, .toggle::after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 1em;
+  height: 1em;
+}
+
+.toggle::before, .toggle:checked::after {
+  transition-delay: 0s;
+}
+
+.toggle:checked::before, .toggle::after {
+  transition-delay: calc(var(--dur) * 0.75);
+  transition-timing-function: cubic-bezier(0.3, 1.6, 0.5, 0.7);
+}
+
+.toggle::before {
+  transform: translateX(-1.5em);
+}
+
+.toggle:checked::before {
+  transform: translateX(1.5em);
+}
+
+.toggle:checked::after {
+  transform: translateX(3em);
+}
+
+.toggle:checked ~ .curtain {
+  transform: scaleX(1);
+}
+
+.toggle:focus {
+  outline: transparent;
+} */
+
+/* CAROUSEL 1 */
+
+#carousel img {
+  width: 100%;
+  height: 300px;
+}
+
+/* PAGE ACCUEIL CONTENU CARDS  */
+.titreCards {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card {
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__face {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  display: none;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.pic {
+  width: 200px;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* FOOTER  */
+
+footer {
+  background-color: #e7e7e7;
+}
+
+.text-right {
+  display: flex;
+  justify-content: end;
+}
