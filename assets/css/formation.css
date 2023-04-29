@@ -25,7 +25,7 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  border: 3px solid;
+  border: 3px solid #273746;
 }
 
 .box {
@@ -53,10 +53,14 @@ table {
   transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
-  color: black;
-  background-color: white;
+  color: #273746;
+  background-color: #FFF;
   padding: 5px 10px;
   font-size: 16px;
+}
+
+.title:hover {
+  color: #145a32;
 }
 
 /* FOOTER  */
