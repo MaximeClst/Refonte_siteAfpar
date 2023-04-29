@@ -18,48 +18,70 @@
 <body>
   <!-- NAVBAR  -->
   <header>
-    <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <!-- NAVBAR LOGO+RECHERCHER -->
+    <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <a href="index.html" class="brand">
-            <img src="images/logo.jpeg" alt="logo" class="img-fluid" />
-          </a>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Accueil</a>
+        <a href="index.html" class="brand">
+          <img src="/assets/images/logo-afpar.png" alt="logo" class="img-fluid" />
+        </a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Rechercher sur le site" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- NAVBAR MEGA MENU -->
+
+    <nav class="mega-menu">
+      <ul class="mega-menu-main">
+        <li class="lvl-0">
+          <a href="#">Choisir sa formation</a>
+          <ul class="mega-menu-tab">
+            <li class="lvl-1">
+              <h2>Secteur tertiaire</h2>
+              <ul class="lvl-2">
+                <li><a href="#">Hôtellerie - Restauration - Tourisme</a></li>
+                <li><a href="#">Informatique</a></li>
+                <li><a href="#">Secrétariat - Comptabilité - Gestion</a></li>
+                <li><a href="#">Service à la personne</a></li>
+                <li><a href="#">Médiation - Insertion et Formation</a></li>
+                <li><a href="#">Commerce</a></li>
+                <li><a href="#">Mécanique automobile/motocycle</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Nos Services</a>
+            <li class="lvl-1">
+              <h2>Secteur primaire</h2>
+              <ul class="lvl-2">
+                <li><a href="#">Horticulture - Environnement</a></li>
+                <li><a href="#">Transition écologique</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="centre.html">Nos Centres de formation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recrute.html">L'AFPAR recrute</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://www.marches-securises.fr/perso/AFPAR_974/s">Marchés publics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quisommesnous.html">Qui sommes nous ?</a>
+            <li class="lvl-1">
+              <h2>Secteur secondaire</h2>
+              <ul class="lvl-2">
+                <li><a href="#">Bois et Charpente</a></li>
+                <li><a href="#">Electricité et maintenance</a></li>
+                <li><a href="#">Bâtiment gros oeuvre / second oeuvre</a></li>
+                <li><a href="#">Bâtiment encadrement chantier</a></li>
+                <li><a href="#">Industrie</a></li>
+                <li><a href="#">Economie Bleue</a></li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" id="search" placeholder="Rechercher" />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-          <!-- DARK MODE  -->
-          <!-- <form class="dMode">
-              <input type="checkbox" id="dark-mode" class="toggle" name="Dark mode" role="switch" value="on">
-              <label for="dark-mode" class="sr">Dark Mode</label>
-              <div class="curtain"></div>
-            </form> -->
-        </div>
-      </div>
+        </li>
+        <li class="lvl-0">
+          <a href="#">Découvrir l'AFPAR</a>
+          <ul class="mega-menu-tab">
+            <li class="lvl-1">
+              <ul class="lvl-2">
+                <li><a href="services.html">Nos services</a></li>
+                <li><a href="centre.html">Nos centre de formation</a></li>
+                <li><a href="recrute.html">L'AFPAR recrute</a></li>
+                <li><a href="quisommesnous.html">Qui sommes-nous ?</a></li>
+              </ul>
+            </li>
+        </li>
+      </ul>
     </nav>
   </header>
 
