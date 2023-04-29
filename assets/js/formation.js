@@ -2,9 +2,9 @@
 
 let titles = document.querySelectorAll(".title");
 
-titles.forEach(function (title) {
+titles.forEach(function(title) {
 
-  title.addEventListener('click', function () {
+  title.addEventListener('click', function() {
     let cheminPage = 'mBoulang.html';
 
     Swal.fire({
